@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Base_project</string>
+    <string name="name">Timetable for HSE FE</string>
+    <string name="button_st_schedule_text">Расписание для студентов</string>
+    <string name="button_te_schedule_text">Расписание для преподавателя</string>
+
+    <string name="student_text">Выберите преподавателя</string>
+    <string name="button_day_schedule">Расписание \n на день</string>
+    <string name="button_week_schedule">Расписание \n на неделю</string>
+</resources>
