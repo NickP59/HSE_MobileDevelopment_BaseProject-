@@ -36,7 +36,7 @@ public class TeacherActivity extends AppCompatActivity {
 
         final Spinner spinner = findViewById(R.id.groupList);
 
-        List<StudentActivity.Group> groups = new ArrayList<>();
+        List<Group> groups = new ArrayList<>();
         initGroupList(groups);
 
         ArrayAdapter<?> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, groups);
@@ -68,9 +68,9 @@ public class TeacherActivity extends AppCompatActivity {
     }
 
 
-    private void initGroupList(List<StudentActivity.Group> groups) {
-        groups.add(new StudentActivity.Group(1,"Преподаватель 1"));
-        groups.add(new StudentActivity.Group(2,"Преподаватель 2"));
+    private void initGroupList(List<Group> groups) {
+        groups.add(new Group(1,"Преподаватель 1"));
+        groups.add(new Group(2,"Преподаватель 2"));
     }
 
     private void initTime() {

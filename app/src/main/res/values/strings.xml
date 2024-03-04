@@ -4,7 +4,28 @@
     <string name="button_st_schedule_text">Расписание для студентов</string>
     <string name="button_te_schedule_text">Расписание для преподавателя</string>
 
-    <string name="student_text">Выберите преподавателя</string>
+    <string name="logo">logo</string>
+    <string name="chose_teacher_text">Выберите преподавателя:</string>
+    <string name="chose_group_text">Выберите группу:</string>
+    <string name="time_label">Сейчас:</string>
     <string name="button_day_schedule">Расписание \n на день</string>
     <string name="button_week_schedule">Расписание \n на неделю</string>
+
+
+    <string name="status_base">Нет пар</string>
+    <string name="subject_base">Дисциплина</string>
+    <string name="cabinet_base">Корпус</string>
+    <string name="corp_base">Кабинет</string>
+    <string name="teacher_base">Преподаватель</string>
+
+    <string name="button_settings">Настройки</string>
+
+    <string name="settings_name">Укажите ваше имя</string>
+    <string name="settings_lightLevel">Текущая освещенность:</string>
+    <string name="settings_photo">Укажите фото:</string>
+    <string name="settings_all_sensors">Все датчики:</string>
+    <string name="button_settings_save">Сохранить</string>
+    <string name="button_settings_photo">Сделать фото</string>
+    <string name="saved_message_text">Сохранено</string>
+    <string name="ask_photo_permits">Для снятия фото нужно предоставить права на фото</string>
 </resources>

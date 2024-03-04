@@ -38,7 +38,8 @@ public class StudentActivity extends AppCompatActivity {
         final Spinner spinner = findViewById(R.id.groupList);
 
         List<Group> groups = new ArrayList<>();
-        initGroupList(groups);
+        initGroupList(groups, "ПИ", 21, 3);
+        initGroupList(groups, "БИ", 21, 2);
 
         ArrayAdapter<?> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, groups);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -59,48 +60,20 @@ public class StudentActivity extends AppCompatActivity {
         time = findViewById(R.id.time);
         initTime();
 
-         status = findViewById(R.id.status);
-         subject = findViewById(R.id.subject);
-         cabinet = findViewById(R.id.cabinet);
-         corp = findViewById(R.id.corp);
-         teacher = findViewById(R.id.teacher);
+        status = findViewById(R.id.status);
+        subject = findViewById(R.id.subject);
+        cabinet = findViewById(R.id.cabinet);
+        corp = findViewById(R.id.corp);
+        teacher = findViewById(R.id.teacher);
 
         initData();
     }
 
-    static class Group {
 
-        private Integer id;
-        private String name;
-        public Group(Integer id, String name) {
-            this.id = id;
-            this.name = name;
-        }
-        public Integer getId() {
-            return id;
-        }
-        public void setId(Integer id) {
-            this.id = id;
-        }
-        @Override
-        public String toString() {
-            return name;
-        }
-        public String getName() {
-            return name;
-        }
-        public void setName(String name) {
-            this.name = name;
-        }
-    }
 
-    private void initGroupList(List<Group> groups) {
-        int k = 0;
-        for (int i = 21; i < 24; i++)
-            for (int j = 1; j < 4; j++){
-                groups.add(new Group(k, "PI-" + i + "-" + j));
-                k++;
-            }
+    private void initGroupList(List<Group> groups, String program, int year, int count) {
+        for (int i = 1; i <= count; i++)
+            groups.add(new Group(i, program + "-" + year + "-" + i));
     }
 
     private void initTime() {

@@ -23,7 +23,7 @@
             android:id="@+id/textHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выберите преподавателя:"
+            android:text="@string/chose_teacher_text"
             style="@style/LabelStyle"/>
 
         <Spinner
@@ -38,14 +38,14 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Сейчас:" />
+                android:text="@string/time_label" />
 
             <TextView
                 android:id="@+id/time"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="12:00" />
