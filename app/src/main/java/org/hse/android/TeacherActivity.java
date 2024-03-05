@@ -84,16 +84,16 @@ public class TeacherActivity extends AppCompatActivity {
         String formattedTime = timeFormat.format(currentTime);
         String dayOfWeek = dayFormat.format(currentTime);
 
-        String result = formattedTime + ", " + dayOfWeek;
+        String result = formattedTime + ", " + Character.toUpperCase(dayOfWeek.charAt(0)) + dayOfWeek.substring(1);;
 
         time.setText(result);
     }
 
     private void initData() {
-        status.setText("Нет пар");
-        subject.setText("Дисциплина");
-        cabinet.setText("Кабинет");
-        corp.setText("Корпус");
-        teacher.setText("Преподаватель");
+        status.setText(R.string.status_base);
+        subject.setText(R.string.subject_base);
+        cabinet.setText(R.string.cabinet_base);
+        corp.setText(R.string.corp_base);
+        teacher.setText(R.string.teacher_base);
     }
 }

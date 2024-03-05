@@ -40,9 +40,10 @@
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="130dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/time_label" />
+                android:text="@string/time_label"
+                style = "@style/LabelStyle"/>
 
             <TextView
                 android:id="@+id/time"
@@ -97,6 +98,7 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="@string/button_week_schedule" />
         </LinearLayout>
 
